@@ -1,0 +1,5 @@
+Contact: https://github.com/rafikiCWB
+Contact: https://twitter.com/CwbRafiki
+Expires: 2026-07-03T23:59:59.000Z
+Preferred-Languages: pt-BR, en
+Canonical: https://orange-river-02e0bbf1e.azurestaticapps.net/.well-known/security.txt

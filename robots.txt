@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://orange-river-02e0bbf1e.azurestaticapps.net/sitemap.xml
+
+# Disallow sensitive areas (if any)
+# Disallow: /admin/
+# Disallow: /private/
