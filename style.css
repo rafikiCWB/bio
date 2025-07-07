@@ -424,29 +424,69 @@ main section > div > p {
     margin-bottom: 24px;
 }
 
-@media (max-width: 768px) {
-    .tech-list, .art-list, .tools-list, .gaming-style, .support-reasons, .contact-list, .journey-list, .values-list {
-        grid-template-columns: 1fr;
-        gap: 16px;
+/* Visit Counter - Discreto */
+.visit-counter-footer {
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    z-index: 1000;
+}
+
+.visit-counter-container {
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    color: #C4C4CC;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    opacity: 0.6;
+}
+
+.visit-counter-container:hover {
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.8);
+    transform: scale(1.05);
+}
+
+.visit-counter-label {
+    font-size: 14px;
+    filter: grayscale(30%);
+}
+
+#visit-counter {
+    font-weight: 600;
+    color: #9572FC;
+    transition: opacity 0.3s ease;
+    min-width: 20px;
+    text-align: center;
+}
+
+/* Responsivo - ocultar em telas muito pequenas */
+@media (max-width: 480px) {
+    .visit-counter-footer {
+        bottom: 12px;
+        right: 12px;
     }
     
-    .contact-cta {
-        grid-template-columns: 1fr;
+    .visit-counter-container {
+        padding: 6px 10px;
+        font-size: 11px;
     }
     
-    .games-list {
-        grid-template-columns: 1fr;
+    .visit-counter-label {
+        font-size: 12px;
     }
-    
-    .about-content {
-        padding: 20px;
-    }
-    
-    header h1 {
-        font-size: 24px;
-    }
-    
-    main section {
-        padding: 24px 16px;
+}
+
+/* Modo escuro adicional */
+@media (prefers-color-scheme: dark) {
+    .visit-counter-container {
+        background: rgba(18, 18, 20, 0.8);
+        border-color: rgba(255, 255, 255, 0.15);
     }
 }
